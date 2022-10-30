@@ -6,36 +6,10 @@
 
 .paragraph, p {
   font-size: 14px;
-  color: #ffffff;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 10px; }
-
-.heading1, h1 {
-  color: #ffffff;
-  font-size: 18px;
-  font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin: 0 0 20px; }
-
-.heading2, ul.author-list > li .autor-box .autor-content .autor-title h1 span:after, h2 {
-  color: #ffffff;
-  font-size: 17px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin: 0 0 10px;
-  line-height: 28px; }
-
-.heading3, h3 {
-  color: #ffffff;
-  font-size: 14px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 400;
-  margin: 0;
-  line-height: 28px; }
 
 .back-cover, body.boxed-style {
   background-size: cover !important;
@@ -51,25 +25,14 @@
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out; }
 
-/**
- * Allows you to use retina images at various pixel densities.
- * Examples:
- *
- *   @include retina(/images/mypic.jpg, 2);
- *   @include retina(/images/mypic.jpg, 3, 100px 100px, left top no-repeat transparent);
- *
- * @param  {Value}  $path               The path to the file name minus extension.
- * @param  {Number} $cap:    2          The highest pixel density level images exist for.
- * @param  {Value}  $size:   auto auto  The intended width of the rendered image.
- * @param  {Value}  $extras: null       Any other `background` values to be added.
- */
 /*------------------------------------------------- */
 /* =  Header
  *------------------------------------------------- */
+
 .header-banner-place {
   width: 100%;
   padding: 14px 0 20px 0;
-  background: #212121;
+  background: #c5c5c5;
   overflow: hidden;
   text-align: center; }
   .header-banner-place a.navbar-brand {
@@ -103,7 +66,7 @@ header.active {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out; }
   .navbar-nav > li > a {
-    color: #fff !important;
+    color: #000000 !important;
     font-size: 14px;
     font-weight: 400;
     font-family: "Roboto Condensed", sans-serif;
@@ -117,15 +80,11 @@ header.active {
     .navbar-nav > li > a i {
       font-size: 13px;
       margin-left: 10px; }
-  .navbar-nav > li:hover > a,
-  .navbar-nav > li.active > a {
-    color: #ff7e00 !important; }
+
   .navbar-nav > li:first-child > a {
     padding-left: 0 !important; }
   .navbar-nav > li > a.open-search {
     border-bottom: 1px solid transparent; }
-  .navbar-nav li.drop-link {
-    position: relative; }
   .navbar-nav li.search {
     position: inherit; }
 
@@ -136,14 +95,14 @@ header.active {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   overflow: hidden;
-  background: #212121;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.03); }
+  background: #c5c5c5;
+  border-bottom: 1px solid #c5c5c5; }
   .top-line ul.info-list {
     padding-top: 10px; }
     .top-line ul.info-list li {
       display: inline-block;
       margin-right: 10px;
-      color: #fff;
+      color: #c5c5c5;
       font-size: 13px;
       font-family: "Roboto Condensed", sans-serif;
       font-weight: 400;
@@ -153,81 +112,24 @@ header.active {
         font-size: 14px;
         margin-right: 10px; }
       .top-line ul.info-list li a {
-        color: #f9f9f9;
+        color: #8c00ff;
         outline: none; }
   .top-line ul.info-list.right-align {
     text-align: right; }
     .top-line ul.info-list.right-align li {
       margin-right: 0;
       margin-left: 15px; }
-  .top-line ul.social-icons {
-    text-align: right; }
-    .top-line ul.social-icons li {
-      display: inline-block;
-      margin-left: 9px; }
-      .top-line ul.social-icons li a {
-        font-size: 14px;
-        color: #f3f3f3; }
-      .top-line ul.social-icons li a:hover {
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -o-transform: scale(1.2); }
+
 
 header.active .top-line {
   height: 0;
   padding: 0; }
 
-.navbar-collapse {
-  position: relative; }
+.img-home{    
+    width: 65%;        
+    height: 50%;
+}
 
-.form-inline {
-  position: relative;
-  float: right;
-  width: 200px;
-  margin-left: 30px;
-  margin-top: 3px; }
-  .form-inline input.form-control {
-    border: 1px solid transparent;
-    padding: 8px 20px;
-    color: #fff;
-    font-size: 12px;
-    font-family: "Roboto Condensed", sans-serif;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    border-radius: 0px;
-    outline: none !important;
-    box-shadow: 0 0 0 transparent;
-    -webkit-box-shadow: 0 0 0 transparent;
-    -moz-box-shadow: 0 0 0 transparent;
-    -o-box-shadow: 0 0 0 transparent;
-    width: 200px;
-    background: #333333;
-    margin: 0 !important;
-    text-transform: uppercase; }
-  .form-inline button.btn-primary {
-    position: absolute;
-    right: 16px;
-    top: 0 px;
-    padding: 8px 0px 8px 20px;
-    font-size: 16px;
-    margin-left: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
-    background: transparent;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    outline: none; }
-  .form-inline button.btn-primary:hover {
-    opacity: 0.7; }
 
 .mega-posts-menu {
   position: absolute;
@@ -259,7 +161,7 @@ header.active .top-line {
       display: inline-block;
       margin-bottom: 3px;
       margin-right: 3px;
-      float: none; }
+      float: left; }
       .mega-posts-menu ul.filter-list li a {
         padding: 6px 15px;
         color: #ccc;
@@ -272,122 +174,35 @@ header.active .top-line {
         border: 1px solid transparent;
         color: #fff; }
 
-li:hover .mega-posts-menu {
-  visibility: visible;
-  opacity: 1;
-  margin-top: 0; }
+.titulo-noticias{
+    font-size: medium;
+    margin-top: 10px;
+}
 
-.dropdown {
-  position: absolute;
-  border-top: 2px solid #ff7e00;
-  top: 100%;
-  left: 0;
-  background: #343a40;
-  width: 200px;
-  visibility: hidden;
-  opacity: 0;
-  margin-top: 10px;
-  transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -webkit-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out; }
-  .dropdown > li {
-    position: relative;
-    display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    .dropdown > li a {
-      padding: 12px 20px;
-      font-size: 13px;
-      font-family: "Roboto Condensed", sans-serif;
-      text-transform: uppercase;
-      color: #fff; }
-      .dropdown > li a i {
-        font-size: 16px;
-        margin-left: 10px; }
-    .dropdown > li > a:hover {
-      color: #ff7e00; }
-    .dropdown > li .dropdown.level2 {
-      top: -2px;
-      left: 100%;
-      border-left: 1px solid #292929; }
+#searchbar{
+  margin-left: 15%;
+  padding:15px;
+  border-radius: 10px;
+}
 
-li:hover > .dropdown {
-  visibility: visible;
-  opacity: 1;
-  margin-top: 0; }
+input[type=text] {
+   width: 30%;
+   -webkit-transition: width 0.15s ease-in-out;
+   transition: width 0.15s ease-in-out;
+}
 
-a.open-menu {
-  color: #fff;
-  font-size: 15px;
-  padding: 20px 0; }
+input[type=text]:focus {
+  width: 70%;
+}
 
-div.vertical-box {
-  position: fixed;
-  top: 0;
-  left: -260px;
-  width: 260px;
-  height: 100%;
-  background: #282828;
-  overflow-y: scroll;
-  transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out; }
-  div.vertical-box a.close-menu {
-    position: absolute;
-    top: 23px;
-    right: 25px;
-    font-size: 17px;
-    color: #ff7e00; }
-  div.vertical-box h2 {
-    color: #fff;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #333333;
-    padding: 20px 30px; }
-  div.vertical-box ul.vertical-menu {
-    padding: 20px 30px;
-    border-bottom: 1px solid #333333; }
-    div.vertical-box ul.vertical-menu li {
-      display: block;
-      margin-bottom: 5px; }
-      div.vertical-box ul.vertical-menu li a {
-        font-size: 13px;
-        font-family: "Roboto Condensed", sans-serif;
-        color: #fff;
-        text-transform: uppercase; }
-        div.vertical-box ul.vertical-menu li a i {
-          margin-left: 10px;
-          font-size: 16px;
-          color: #ff7e00; }
-      div.vertical-box ul.vertical-menu li ul.level2 {
-        padding: 6px 0;
-        padding-left: 30px;
-        display: none; }
-        div.vertical-box ul.vertical-menu li ul.level2 li a {
-          text-transform: capitalize;
-          color: #aaa; }
-  div.vertical-box ul.social-icons {
-    padding: 10px 30px; }
-    div.vertical-box ul.social-icons li {
-      display: inline-block;
-      margin-right: 9px; }
-      div.vertical-box ul.social-icons li a {
-        font-size: 14px;
-        color: #f3f3f3; }
-      div.vertical-box ul.social-icons li a:hover {
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -o-transform: scale(1.2); }
+#list{
+ font-size:  1.5em;
+ margin-left: 90px;
+}
 
-div.vertical-box.active {
-  left: 0; }
-
-/*-------------------------------------------------- */
-/* 1. Isotope filtering */
-/*------------------------------------------------- */
-.isotope-item {
-  z-index: 2; }
+.animals{
+display: list-item;    
+} 
 
 .isotope-hidden.isotope-item {
   pointer-events: none;
@@ -412,14 +227,14 @@ div.vertical-box.active {
 /* =  General */
 /*------------------------------------------------- */
 body {
-  background: #333333;
- }
+  background: #fff; }
 
 body.boxed-style {
   background: url("../upload/blog/back.jpg") 0 0 fixed; }
   body.boxed-style #container {
+    max-width: 1190px;
     margin: 0 auto;
-    background: #333333;
+    background: #fff;
     overflow: hidden;
     position: relative;
     z-index: 2; }
@@ -1470,7 +1285,7 @@ ul.small-posts {
       display: inline-block;
       margin-bottom: 3px;
       margin-right: 3px;
-      float: none; }
+      float: left; }
       .sidebar .tags-widget ul.tags-list li a {
         padding: 8px 20px;
         color: #565656;
@@ -1538,7 +1353,7 @@ ul.small-posts {
       display: inline-block;
       margin-bottom: 3px;
       margin-right: 3px;
-      float: none; }
+      float: left; }
       .single-post .text-boxes ul.tags-list li a {
         padding: 8px 20px;
         color: #565656;
@@ -2650,7 +2465,7 @@ footer {
         display: inline-block;
         margin-bottom: 3px;
         margin-right: 3px;
-        float: none; }
+        float: left; }
         footer .up-footer .tags-widget ul.tags-list li a {
           padding: 8px 20px;
           color: #ccc;
