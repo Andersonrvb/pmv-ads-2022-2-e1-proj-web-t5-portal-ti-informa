@@ -161,7 +161,7 @@ header.active .top-line {
       display: inline-block;
       margin-bottom: 3px;
       margin-right: 3px;
-      float: left; }
+      float: none; }
       .mega-posts-menu ul.filter-list li a {
         padding: 6px 15px;
         color: #ccc;
@@ -227,7 +227,7 @@ display: list-item;
 /* =  General */
 /*------------------------------------------------- */
 body {
-  background: #fff; }
+  background: #333333; }
 
 body.boxed-style {
   background: url("../upload/blog/back.jpg") 0 0 fixed; }
