@@ -259,7 +259,7 @@ header.active .top-line {
       display: inline-block;
       margin-bottom: 3px;
       margin-right: 3px;
-      float: left; }
+      float: none; }
       .mega-posts-menu ul.filter-list li a {
         padding: 6px 15px;
         color: #ccc;
@@ -412,14 +412,14 @@ div.vertical-box.active {
 /* =  General */
 /*------------------------------------------------- */
 body {
-  background: #fff; }
+  background: #333333;
+ }
 
 body.boxed-style {
   background: url("../upload/blog/back.jpg") 0 0 fixed; }
   body.boxed-style #container {
-    max-width: 1190px;
     margin: 0 auto;
-    background: #fff;
+    background: #333333;
     overflow: hidden;
     position: relative;
     z-index: 2; }
@@ -1470,7 +1470,7 @@ ul.small-posts {
       display: inline-block;
       margin-bottom: 3px;
       margin-right: 3px;
-      float: left; }
+      float: none; }
       .sidebar .tags-widget ul.tags-list li a {
         padding: 8px 20px;
         color: #565656;
@@ -1538,7 +1538,7 @@ ul.small-posts {
       display: inline-block;
       margin-bottom: 3px;
       margin-right: 3px;
-      float: left; }
+      float: none; }
       .single-post .text-boxes ul.tags-list li a {
         padding: 8px 20px;
         color: #565656;
@@ -2650,7 +2650,7 @@ footer {
         display: inline-block;
         margin-bottom: 3px;
         margin-right: 3px;
-        float: left; }
+        float: none; }
         footer .up-footer .tags-widget ul.tags-list li a {
           padding: 8px 20px;
           color: #ccc;
